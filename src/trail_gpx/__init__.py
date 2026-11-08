@@ -1,0 +1,1 @@
+from trail_gpx.app import main_app
