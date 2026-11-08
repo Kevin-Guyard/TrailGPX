@@ -1,0 +1,17 @@
+# Local Python environment
+.venv/
+
+# Local PyCharm configuration
+.idea/
+
+# Codex configurations
+AGENTS.md
+
+# Flet builds and local persistent data
+.flet/
+build/
+
+# Generated Python files and test caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
