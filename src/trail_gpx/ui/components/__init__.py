@@ -1,1 +1,1 @@
-from .inputs import TextField
+from .inputs import GpxFilePicker, TextField

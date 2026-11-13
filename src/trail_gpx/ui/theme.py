@@ -33,3 +33,17 @@ class TEXT_FIELD:
     PADDING_BOTTOM: Final[float | int] = 12
 
     BG_COLOR: Final[str | ft.Colors] = "#FFFFFF"
+
+class GPX_FILE_PICKER:
+
+    BORDER_RADIUS: Final[float | int] = 8
+    BORDER_WIDTH: Final[float | int] = 1
+
+    PADDING_LEFT: Final[float | int] = 12
+    PADDING_TOP: Final[float | int] = 20
+    PADDING_RIGHT: Final[float | int] = 12
+    PADDING_BOTTOM: Final[float | int] = 12
+
+    ICON_SIZE = 30
+
+    BG_COLOR: Final[str | ft.Colors] = "#FFFFFF"
