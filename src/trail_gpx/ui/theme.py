@@ -47,3 +47,12 @@ class GPX_FILE_PICKER:
     ICON_SIZE = 30
 
     BG_COLOR: Final[str | ft.Colors] = "#FFFFFF"
+
+class SMALL_ICON_BUTTON:
+
+    ICON_COLOR: Final[str | ft.Colors] = "#000000"
+    ICON_SIZE: Final[float | int] = 25
+
+    BUTTON_SIZE: Final[float | int] = ICON_SIZE * 1.5
+
+    BG_COLOR: Final[str | ft.Colors] = ft.Colors.TRANSPARENT
