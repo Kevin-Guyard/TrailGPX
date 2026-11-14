@@ -1,2 +1,2 @@
-from .buttons import SmallIconButton, SmallIconButtonIcons
+from .buttons import MediumButton, MediumButtonConfig, SmallIconButton, SmallIconButtonIcons
 from .inputs import GpxFilePicker, TextField

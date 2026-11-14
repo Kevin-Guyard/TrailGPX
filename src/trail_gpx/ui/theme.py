@@ -56,3 +56,22 @@ class SMALL_ICON_BUTTON:
     BUTTON_SIZE: Final[float | int] = ICON_SIZE * 1.5
 
     BG_COLOR: Final[str | ft.Colors] = ft.Colors.TRANSPARENT
+
+class MEDIUM_BUTTON:
+
+    WIDTH: Final[float | int] = 150
+    HEIGHT: Final[float | int] = 40
+    RADIUS: Final[float | int] = 30
+
+    TEXT_COLOR_ENABLED: Final[str | ft.Colors] = "#FFFFFF"
+    TEXT_COLOR_DISABLED: Final[str | ft.Colors] = "#757575"
+
+    BORDER_WIDTH: Final[float | int] = 2
+    BORDER_COLOR_ENABLED: Final[str | ft.Colors] = "#000000"
+    BORDER_COLOR_DISABLED: Final[str | ft.Colors] = "#D0D0D0"
+
+    ELEVATION_ENABLED: Final[float | int] = 8
+    ELEVATION_DISABLED: Final[float | int] = 4
+
+    BG_ENABLED: Final[str | ft.Colors] = "#000000"
+    BG_DISABLED: Final[str | ft.Colors] = "#E0E0E0"
