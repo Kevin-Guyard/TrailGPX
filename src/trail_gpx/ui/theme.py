@@ -75,3 +75,12 @@ class MEDIUM_BUTTON:
 
     BG_ENABLED: Final[str | ft.Colors] = "#000000"
     BG_DISABLED: Final[str | ft.Colors] = "#E0E0E0"
+
+class GPX_INFOS_DISPLAY:
+
+    ICON_SIZE: Final[float | int] = 24
+    ICON_COLOR: Final[str | ft.Colors] = "#000000"
+
+    SPACING_AFTER_TITLE: Final[float | int] = 4
+    SPACING_BETWEEN_ICON_AND_METRIC: Final[float | int] = 4
+    SPACING_BETWEEN_METRIC_BLOCS: Final[float | int] = 10
