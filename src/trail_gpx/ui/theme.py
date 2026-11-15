@@ -5,7 +5,10 @@ from typing import Final
 class TEXT_SIZE:
 
     NORMAL: Final[float | int] = 16
+    SUB: Final[float | int] = 12
     ERROR: Final[float | int] = 12
+    IMPORTANT: Final[float | int] = 20
+    TITLE: Final[float | int] = 28
 
 class TEXT_COLOR:
 
@@ -75,3 +78,43 @@ class MEDIUM_BUTTON:
 
     BG_ENABLED: Final[str | ft.Colors] = "#000000"
     BG_DISABLED: Final[str | ft.Colors] = "#E0E0E0"
+
+class GPX_INFOS_DISPLAY:
+
+    ICON_SIZE: Final[float | int] = 24
+    ICON_COLOR: Final[str | ft.Colors] = "#000000"
+
+    SPACING_AFTER_TITLE: Final[float | int] = 4
+    SPACING_BETWEEN_ICON_AND_METRIC: Final[float | int] = 4
+    SPACING_BETWEEN_METRIC_BLOCS: Final[float | int] = 10
+
+class FOLDER_AND_ROUTE_CARD:
+
+    BORDER_WIDTH: Final[float | int] = 1
+    BORDER_RADIUS: Final[float | int] = 12
+
+    PADDING_HORIZONTAL: Final[float | int] = 16
+    PADDING_VERTICAL: Final[float | int] = 12
+
+    MAIN_ICON_SIZE: Final[float | int] = 30
+    MAIN_ICON_COLOR: Final[str | ft.Colors] = "#000000"
+
+    METRIC_ICON_SIZE: Final[float | int] = 16
+    METRIC_ICON_COLOR: Final[str | ft.Colors] = "#000000"
+
+    SPACING_BETWEEN_ICON_AND_TEXT: Final[float | int] = 16
+    SPACING_BETWEEN_TWO_LINES: Final[float | int] = 0
+
+    SPACING_BETWEEN_ICON_AND_METRIC: Final[float | int] = 2
+    SPACING_BETWEEN_METRICS: Final[float | int] = 4
+
+    BG_COLOR: Final[str | ft.Colors] = "#FFFFFF"
+
+class GPX_DETAIL_INFOS_DISPLAY:
+
+    ICON_SIZE: Final[float | int] = 20
+    ICON_COLOR: Final[str | ft.Colors] = "#000000"
+
+    SPACING_AFTER_TITLE: Final[float | int] = 16
+    SPACING_BETWEEN_TWO_LINES: Final[float | int] = 10
+    SPACING_BETWEEN_ICON_AND_TEXT: Final[float | int] = 8
