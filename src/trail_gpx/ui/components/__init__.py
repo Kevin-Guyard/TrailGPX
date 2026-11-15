@@ -1,3 +1,3 @@
 from .buttons import MediumButton, MediumButtonConfig, SmallIconButton, SmallIconButtonIcons
-from .display import GpxInfosDisplay
+from .display import FolderCard, GpxInfosDisplay
 from .inputs import GpxFilePicker, TextField

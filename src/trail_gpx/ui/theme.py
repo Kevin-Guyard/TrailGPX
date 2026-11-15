@@ -5,6 +5,7 @@ from typing import Final
 class TEXT_SIZE:
 
     NORMAL: Final[float | int] = 16
+    SUB: Final[float | int] = 14
     ERROR: Final[float | int] = 12
 
 class TEXT_COLOR:
@@ -84,3 +85,20 @@ class GPX_INFOS_DISPLAY:
     SPACING_AFTER_TITLE: Final[float | int] = 4
     SPACING_BETWEEN_ICON_AND_METRIC: Final[float | int] = 4
     SPACING_BETWEEN_METRIC_BLOCS: Final[float | int] = 10
+
+class FOLDER_AND_ROUTE_CARD:
+
+    BORDER_WIDTH: Final[float | int] = 1
+    BORDER_RADIUS: Final[float | int] = 12
+
+    PADDING_HORIZONTAL: Final[float | int] = 16
+    PADDING_VERTICAL: Final[float | int] = 12
+
+    MAIN_ICON_SIZE: Final[float | int] = 30
+    MAIN_ICON_COLOR: Final[str | ft.Colors] = "#000000"
+
+    METRIC_ICON_SIZE: Final[float | int] = 16
+    METRIC_ICON_COLOR: Final[str | ft.Colors] = "#000000"
+
+    SPACING_BETWEEN_ICON_AND_TEXT: Final[float | int] = 16
+    SPACING_BETWEEN_TWO_LINES: Final[float | int] = 0
