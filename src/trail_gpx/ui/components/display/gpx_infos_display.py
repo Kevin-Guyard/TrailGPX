@@ -6,7 +6,7 @@ from ... import theme
 
 _TITLE_TEXT_STYLE: Final[ft.TextStyle] = ft.TextStyle(
     color=theme.TEXT_COLOR.NORMAL,
-    size=theme.TEXT_SIZE.NORMAL,
+    size=theme.TEXT_SIZE.IMPORTANT,
     weight=ft.FontWeight.BOLD,
 )
 
