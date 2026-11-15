@@ -7,6 +7,7 @@ class TEXT_SIZE:
     NORMAL: Final[float | int] = 16
     SUB: Final[float | int] = 12
     ERROR: Final[float | int] = 12
+    IMPORTANT: Final[float | int] = 20
 
 class TEXT_COLOR:
 
@@ -107,3 +108,12 @@ class FOLDER_AND_ROUTE_CARD:
     SPACING_BETWEEN_METRICS: Final[float | int] = 4
 
     BG_COLOR: Final[str | ft.Colors] = "#FFFFFF"
+
+class GPX_DETAIL_INFOS_DISPLAY:
+
+    ICON_SIZE: Final[float | int] = 20
+    ICON_COLOR: Final[str | ft.Colors] = "#000000"
+
+    SPACING_AFTER_TITLE: Final[float | int] = 16
+    SPACING_BETWEEN_TWO_LINES: Final[float | int] = 10
+    SPACING_BETWEEN_ICON_AND_TEXT: Final[float | int] = 8
