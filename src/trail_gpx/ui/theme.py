@@ -8,6 +8,7 @@ class TEXT_SIZE:
     SUB: Final[float | int] = 12
     ERROR: Final[float | int] = 12
     IMPORTANT: Final[float | int] = 20
+    TITLE: Final[float | int] = 28
 
 class TEXT_COLOR:
 
