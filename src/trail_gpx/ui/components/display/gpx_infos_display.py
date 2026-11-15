@@ -107,9 +107,15 @@ class GpxInfosDisplay(ft.Column):
             The control must be mounted when True.
         """
 
-        self._distance_text.value = f"{distance_km if distance_km is not None else 0.0:.1f} km"
-        self._elevation_gain_text.value = f"{elevation_gain_m if elevation_gain_m is not None else 0:d} m"
-        self._elevation_loss_text.value = f"{elevation_loss_m if elevation_loss_m is not None else 0:d} m"
+        self._distance_text.value = (
+            f"{distance_km:.1f} km" if distance_km is not None else "—"
+        )
+        self._elevation_gain_text.value = (
+            f"{elevation_gain_m:d} m" if elevation_gain_m is not None else "—"
+        )
+        self._elevation_loss_text.value = (
+            f"{elevation_loss_m:d} m" if elevation_loss_m is not None else "—"
+        )
 
         if refreshing:
             self.update()
