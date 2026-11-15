@@ -5,7 +5,7 @@ from typing import Final
 class TEXT_SIZE:
 
     NORMAL: Final[float | int] = 16
-    SUB: Final[float | int] = 14
+    SUB: Final[float | int] = 12
     ERROR: Final[float | int] = 12
 
 class TEXT_COLOR:
@@ -102,3 +102,8 @@ class FOLDER_AND_ROUTE_CARD:
 
     SPACING_BETWEEN_ICON_AND_TEXT: Final[float | int] = 16
     SPACING_BETWEEN_TWO_LINES: Final[float | int] = 0
+
+    SPACING_BETWEEN_ICON_AND_METRIC: Final[float | int] = 2
+    SPACING_BETWEEN_METRICS: Final[float | int] = 4
+
+    BG_COLOR: Final[str | ft.Colors] = "#FFFFFF"
