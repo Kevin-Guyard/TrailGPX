@@ -2,6 +2,7 @@ from sqlalchemy import CheckConstraint, ForeignKey, Index, String
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from .. import Base
+from .... import config
 
 
 class Folder(Base):
@@ -22,12 +23,12 @@ class Folder(Base):
     __tablename__: str = "folder"
 
     id: Mapped[int] = mapped_column(primary_key=True)
-    name: Mapped[str] = mapped_column(String(100), nullable=False)
+    name: Mapped[str] = mapped_column(String(config.FOLDER_NAME_MAX_LENGTH), nullable=False)
     parents_id: Mapped[int | None] = mapped_column(ForeignKey("folder.id"))
     parents: Mapped[Folder | None] = relationship(remote_side=[id])
 
     __table_args__: tuple[CheckConstraint | Index, ...] = (
-        CheckConstraint("length(name) <= 100", name="folder_name_length"),
+        CheckConstraint(f"length(name) <= {config.FOLDER_NAME_MAX_LENGTH:d}", name="folder_name_length"),
         Index("folder_parent_name_unique", parents_id, name, unique=True),
         # SQLite treats NULL values as distinct, so root names need a separate index.
         Index(

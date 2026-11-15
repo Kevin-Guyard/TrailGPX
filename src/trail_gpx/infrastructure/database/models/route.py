@@ -1,7 +1,9 @@
 from sqlalchemy import CheckConstraint, ForeignKey, String
 from sqlalchemy.orm import Mapped, mapped_column, relationship
+
 from .. import Base
 from .folder import Folder
+from .... import config
 
 
 class Route(Base):
@@ -30,7 +32,7 @@ class Route(Base):
     __tablename__: str = "route"
 
     id: Mapped[int] = mapped_column(primary_key=True)
-    name: Mapped[str] = mapped_column(String(100), nullable=False)
+    name: Mapped[str] = mapped_column(String(config.ROUTE_NAME_MAX_LENGTH), nullable=False)
     folder_id: Mapped[int | None] = mapped_column(ForeignKey("folder.id"))
     folder: Mapped[Folder | None] = relationship()
     distance_km: Mapped[float] = mapped_column(nullable=False)
@@ -40,7 +42,7 @@ class Route(Base):
 
     # Enforce name length and non-negative metrics at the database level.
     __table_args__: tuple[CheckConstraint, ...] = (
-        CheckConstraint("length(name) <= 100", name="route_name_length"),
+        CheckConstraint(f"length(name) <= {config.ROUTE_NAME_MAX_LENGTH:d}", name="route_name_length"),
         CheckConstraint("distance_km >= 0", name="route_distance_km_non_negative"),
         CheckConstraint("elevation_gain_m >= 0", name="route_elevation_gain_m_non_negative"),
         CheckConstraint("elevation_loss_m >= 0", name="route_elevation_loss_m_non_negative"),
